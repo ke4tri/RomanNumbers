@@ -5,6 +5,8 @@ VisualStudioVersion = 15.0.28307.421
 MinimumVisualStudioVersion = 10.0.40219.1
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers", "RomanNumbers\RomanNumbers.csproj", "{BF944C88-9AF2-4BDB-88F3-EF2B98BEE63A}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "RomanNumbers.Test", "RomanNumbers.Test\RomanNumbers.Test.csproj", "{8966F4E6-7E61-4650-9CA2-408583D7B27B}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -15,6 +17,10 @@ Global
 		{BF944C88-9AF2-4BDB-88F3-EF2B98BEE63A}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF944C88-9AF2-4BDB-88F3-EF2B98BEE63A}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{BF944C88-9AF2-4BDB-88F3-EF2B98BEE63A}.Release|Any CPU.Build.0 = Release|Any CPU
+		{8966F4E6-7E61-4650-9CA2-408583D7B27B}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{8966F4E6-7E61-4650-9CA2-408583D7B27B}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{8966F4E6-7E61-4650-9CA2-408583D7B27B}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{8966F4E6-7E61-4650-9CA2-408583D7B27B}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
