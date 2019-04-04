@@ -122,8 +122,8 @@ namespace RomanNumbers.Test
         {
             //Arrange -- Context              -- Given
             var convert = new NumToRomanConverter();
-            int input = 4255;
-            var expectedResult = "IVCCLV";
+            int input = 3999;
+            var expectedResult = "MMMCMXCIX";
 
             //Act     -- Do the thing         -- When
             string actualResult = convert.ConvertNumToRoman(input);
