@@ -12,8 +12,11 @@ namespace RomanNumbers
 
 
             var numberInput = Console.ReadLine();
+            var newNumberInput = numberInput.ToString();
 
-
+            var convertedInput = new NumToRomanConverter();
+            var converMethod = convertedInput.ConvertNumToRoman(newNumberInput);
+            Console.WriteLine($"Your Roman number is {converMethod}");
             Console.ReadLine();
 
         }
