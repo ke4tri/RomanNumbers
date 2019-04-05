@@ -68,12 +68,15 @@ namespace RomanNumbers
                 { 1,"I"},
 
             };
+            int roman2;
+           
             foreach(var(arabic,roman) in numberKeyRomanVal)
             {
+               
                 while (number >= arabic)
                 {
+                    return roman;
                     // working on the while;
-                    
                 }
             }
 

@@ -132,5 +132,21 @@ namespace RomanNumbers.Test
             Assert.Equal(expectedResult, actualResult);
 
         }
+
+        [Fact]
+        public void Test_another_number_Large_to_roman()
+        {
+            //Arrange -- Context              -- Given
+            var convert = new NumToRomanConverter();
+            int input = 3724;
+            var expectedResult = "MMMDCCXXIV";
+
+            //Act     -- Do the thing         -- When
+            string actualResult = convert.ConvertNumToRoman(input);
+
+            //Assert  -- checking the result  -- Then
+            Assert.Equal(expectedResult, actualResult);
+
+        }
     }
 }
