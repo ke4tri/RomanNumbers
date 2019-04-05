@@ -47,6 +47,40 @@ namespace RomanNumbers
 
         }
 
+        public string ConvertNumToRoman2(int number)
+        {
+            Dictionary<int, string> numberKeyRomanVal = new Dictionary<int, string>()
+            {
+                {1000, "M"},
+                {900, "CM"},
+                {500, "D"},
+                {400, "CD"},
+                {100, "C"},
+                {90, "XC"},
+                {50, "L"},
+                {40, "XL"},
+                {10, "X"},
+                {9, "IX"},
+                {5, "V"},
+                {4, "IV"},
+                {3,"III"},
+                { 2,"II"},
+                { 1,"I"},
+
+            };
+            foreach(var(arabic,roman) in numberKeyRomanVal)
+            {
+                while (number >= arabic)
+                {
+                    // working on the while;
+                    
+                }
+            }
+
+            return "";
+        }
+
+
         internal object ConvertNumToRoman(string newNumberInput)
         {
             throw new NotImplementedException();
