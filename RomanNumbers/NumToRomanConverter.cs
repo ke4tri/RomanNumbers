@@ -28,22 +28,6 @@ namespace RomanNumbers
             return "";
             
             throw new ArgumentOutOfRangeException("something bad happened");
-            //List<string> listOfRoman = new List<string>() {"I", "II" };
-
-            //string[] arrayOfRoman = listOfRoman.ToArray();
-            //try
-            //{
-            //    var indexNumber = Int32.Parse(numToConvert);
-
-            //    var newRomanNumber = arrayOfRoman[indexNumber].ToString();
-            //    return newRomanNumber;
-
-            //}
-            //catch (FormatException /* ex this would be a var of FormatException*/)
-            //{
-            //    throw new InvalidInputException();
-            //}
-
 
         }
 
@@ -53,36 +37,41 @@ namespace RomanNumbers
             {
                 {1000, "M"},
                 {900, "CM"},
-                {500, "D"},
+                {500,  "D"},
                 {400, "CD"},
-                {100, "C"},
-                {90, "XC"},
-                {50, "L"},
-                {40, "XL"},
-                {10, "X"},
-                {9, "IX"},
-                {5, "V"},
-                {4, "IV"},
-                {3,"III"},
-                { 2,"II"},
-                { 1,"I"},
+                {100,  "C"},
+                {90,  "XC"},
+                {50,   "L"},
+                {40,  "XL"},
+                {10,   "X"},
+                {9,   "IX"},
+                {5,    "V"},
+                {4,   "IV"},
+                {3,  "III"},
+                {2,   "II"},
+                {1,    "I"},
 
             };
-            int roman2;
-           
-            foreach(var(arabic,roman) in numberKeyRomanVal)
+
+
+            var newNumber = "" ;
+            foreach (var(arabic,roman) in numberKeyRomanVal)
             {
-               
+                //if (number >= arabic)
+                //{
+                //    newNumber += roman;
+                //    number -= arabic;
+                //}
                 while (number >= arabic)
                 {
-                    return roman;
-                    // working on the while;
+                    newNumber += roman;
+                    number -= arabic;
                 }
+
             }
-
-            return "";
+            return newNumber;
+            //return "";
         }
-
 
         internal object ConvertNumToRoman(string newNumberInput)
         {

@@ -138,11 +138,11 @@ namespace RomanNumbers.Test
         {
             //Arrange -- Context              -- Given
             var convert = new NumToRomanConverter();
-            int input = 3724;
-            var expectedResult = "MMMDCCXXIV";
+            int input = 322;
+            var expectedResult = "CCCXXII";
 
             //Act     -- Do the thing         -- When
-            string actualResult = convert.ConvertNumToRoman(input);
+            string actualResult = convert.ConvertNumToRoman2(input);
 
             //Assert  -- checking the result  -- Then
             Assert.Equal(expectedResult, actualResult);
